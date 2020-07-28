@@ -12,8 +12,10 @@ object WorldCount {
     val logData = sc.textFile(logfile)
 
     val result = logData.flatMap(line=>line.split(" ")).map(line=>(line,1)).reduceByKey(_+_)
-
+    println(result.dependencies)
     result.foreach(line=>println(line._1 + "=" + line._2))
+
+    sc.stop()
 
   }
 

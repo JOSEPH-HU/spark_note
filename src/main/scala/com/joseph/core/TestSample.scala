@@ -16,6 +16,8 @@ object TestSample {
 
     rdd.foreach(println)
 
+    sc.stop()
+
   }
 
 }

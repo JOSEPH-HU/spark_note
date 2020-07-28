@@ -15,6 +15,8 @@ object TestUnion {
 
     val rdd = rdd1.union(rdd2)
     rdd.foreach(println)
+
+    sc.stop()
   }
 
 }

@@ -12,6 +12,8 @@ object TestFilter {
     val rdd = sc.parallelize(arr)
     val filterrdd = rdd.filter(line=>line>4)
     filterrdd.foreach(println)
+
+    sc.stop()
   }
 
 }

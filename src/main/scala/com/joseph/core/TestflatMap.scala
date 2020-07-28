@@ -17,6 +17,8 @@ object TestflatMap {
     val rdd = sc.parallelize(arr).flatMap(_.split(","))
     rdd.foreach(println)
 
+    sc.stop()
+
   }
 
 }

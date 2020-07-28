@@ -17,6 +17,8 @@ object TestMapPartitionsWithIndex {
       res.iterator
     })
     rdd.foreach((line=>println(line._1 + "-" + line._2)))
+
+    sc.stop()
   }
 
 }

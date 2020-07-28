@@ -20,6 +20,8 @@ object TestMapPartitions {
     val result = a.mapPartitions(doubleFunc)
     println(result.collect().mkString)
 
+    sc.stop()
+
   }
 
 }

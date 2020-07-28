@@ -14,6 +14,8 @@ object TestMap {
 
     rdd.foreach(println)
 
+    sc.stop()
+
   }
 
 }

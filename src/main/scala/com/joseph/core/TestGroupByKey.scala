@@ -20,6 +20,8 @@ object TestGroupByKey {
 
         })
     rdd.foreach(println)
+
+    sc.stop()
   }
 
 }

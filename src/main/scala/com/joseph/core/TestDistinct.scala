@@ -11,6 +11,8 @@ object TestDistinct {
     val rdd = sc.parallelize(arr).distinct(2)
 
     rdd.foreach(println)
+
+    sc.stop()
   }
 
 }

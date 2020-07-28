@@ -16,6 +16,8 @@ object TestIntersection {
     val rdd = rdd1.intersection(rdd2,2)
 
     rdd.foreach(println)
+
+    sc.stop()
   }
 
 }
